@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="cat">
+<head>
+      <!-- Al head hi han les etiquetes per definir la codificació dels caracters, l'icona de la pàgina web, definir que la pàgina s'escali correctament
+     el títol de la pàgina i relacionar la pàgina amb l'arxiu d'estils .css -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGS | Inici</title>
+    <link rel="icon" href="/arxius-web/logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+            <!-- Al header hi ha el logo de la pàgina, que també és un botó que redirigeix a la pàgina inicial, un menu fet amb llista
+             de tots els botons/subpàgines que han d'aparéixer en el nav i el div amb les classes del menú hamburguesa (el que apareixerà quan facis petita la pantalla o amb
+             un dispositiu més petit)-->
+    <header>
+        <div class="logo">
+            <a href="index.html"> <img src="/arxius-web/logo.PNG" alt="logo" height="52px" width="75px"> </a>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="/index.html">inici</a>
+                <li><a href="/subpàgines/habilitats.html">Habilitats</a></li>
+                <li><a href="/subpàgines/sobre-mi.html">Sobre mi</a></li>
+                <li><a href="/subpàgines/curriculum.html">Currículum</a></li>
+                <li><a href="/subpàgines/projectes.html">Projectes</a></li>
+                <li><a href="/subpàgines/contacte.html">Contacte</a></li>            
+            </ul>
+            <div class="hamburguesa" id="hamburguesa">&#9776;</div>
+        </nav>
+    </header>
+    <!--Dins el main hi han diferents seccions, primer hi ha la de la inici, on s'explica una mica el contingut de la pàgina i afegeixo un botó que ens redirigeix a el formulari php,
+        en aquesta pàgina en concret hi ha una secció per un slider i els divs que es conecten amb el script per tal de que tingui funcionalitat, la secció de pàgins la comento just a sobre.  -->
+    <main>
+        
+        <section class="inici">
+            <h1>Benvinguts a IGS</h1>
+            <br>
+            <p>Sóc l'Isaac Guisset Sànchez, i aquesta és la meva pàgina personal, on recullo diverses coses sobre mi, sobre els meus coneixaments, les meves habilitats, els meus objectius professionals i els meus hobbies.</p>
+        <br>
+        <br>
+        <p>Si estàs interessat en els meus serveis o simplement vols contactar amb mi completa el formulari fent clic al botó que hi ha a continuació i emplena'l amb les teves dades, jo seré el que et contactarà.</p>
+            <a href="/subpàgines/formulari/index.html" class="cta-button">Formulari de contacte!</a>
+        </section>
+        <section class="slider">
+            <div class="slides">
+                <div class="slide fade">
+                    <img src="/arxius-web/1.jpg" alt="Imatge d'un portàtil amb dos terminals obertes, predomina el color verd en la fotografia 
+                    té un aspecte de programa de hacking... ">
+                </div>
+                <div class="slide fade">
+                    <img src="/arxius-web/2.jpg" alt="Imatge d'un home assegut, vista des de l'esquena, l'home porta la dessuadora de color gris i esta mirant atentament a diverses pantalles amb terminals">
+                </div>
+                <div class="slide fade">
+                    <img src="/arxius-web/3.jpg" alt="Imatge d'un portàtil desplegat, vista des de l'angle esquerre, el portàtil es gris i té una pàgina web oberta, no es pot apreciar del tot la pantalla peró es pot veure que te sistema operatiu windows 11 i un parell de pendrives">
+                </div>   
+            </div>
+            <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
+            <div class="next" onclick="plusSlides(1)">&#10095;</div>
+        </section>
+         <!-- Veuràs que casi totes les subpàgines compten amb aquestes  classes, ja que volia crear una pàgina més aviat formal i que respectés el seu propi estil i no anés cambiant a cada subpàgina,
+           he cambiat el nom depenent del contingut però al final els estils sòn els mateixos. -->
+        <section class="pagines">
+            <h2>Pàgines de l'àmbit de l'informàtica que us poden interessar:</h2>
+            <div class="pagines-grid">
+                <div class="pagina">
+                    <h3 class="green">HTB</h3>
+                    <br>
+                    <p>HTB (Hack The Box) és una pàgina per apendre sobre ciberseguretat de manera pràctica i teórica que disposa d'un pla gratuit amb funcionalitats reduides que son suficients per apendre.</p>
+                    <br>
+                    <a href="https://www.hackthebox.com/" target="_blank" class="cta-button">Anar a HTB</a>
+
+                </div>
+
+                <div class="pagina">
+                    <h3 class="incibe">Incibe</h3>
+                    <br>
+                    <p>Aquesta pàgina és de l'institut nacional de ciberseguretat, és molt interessant perque conté molta informació, consells, eines i moltes altres coses per millorar la nostre seguretat dins de la xarxa.</p>
+                    <br>
+                    <a href="https://www.incibe.es/" target="_blank" class="cta-button">Anar a Incibe</a>
+
+                </div>
+                <div class="pagina">
+                    <h3 class="green">Xataka</h3>
+                    <br><br>
+                    <p>Dins d'aquesta pàgina pots trobar diferents tutorials, notícies, explicacions i molt més sobre l'actutalitat i l'informàtica.</p>
+                <br>
+                <br>
+                <a href="https://www.xataka.com/" target="_blank" class="cta-button">Anar a Xataka</a>
+
+            </div>
+               
+            </div>
+        </section>            
+
+    </main>
+
+    <!-- Peu de pàgina que conté informació sobre els drets d'autor i un enllaç a la política de privacitat -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 IGS - Isaac Guisset Sanchez. Tots els drets reservats.</p>
+            <p><a id="linkp" href="/subpàgines/politiquesprivacitat.html">Política de Privacitat</a></p>
+        </div>
+    </footer>
+    
+    <!-- Script per al menú hamburguesa: permet obrir o tancar el menú en dispositius mòbils -->
+    <script>
+        const hamburguesa = document.getElementById('hamburguesa');
+        const menu = document.getElementById('menu');
+    
+        hamburguesa.addEventListener('click', function() {
+            menu.classList.toggle('mostrar');
+        });
+    </script>
+    
+    <!-- Script per a un slider d'imatges: gestiona la visualització d'imatges en una presentació -->
+    <script> 
+        let slideIndex = 0; // Índex inicial del slide
+        showSlides(); // Mostra els slides inicials
+    
+        // Funció per avançar o retrocedir els slides
+        function plusSlides(n) {
+            slideIndex += n; // Incrementa o decreix l'índex
+            showSlides(); // Actualitza la visualització dels slides
+        }
+    
+        // Funció per mostrar el slide actual
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide"); // Obtenim tots els elements amb la classe "slide"
+            
+            // Si l'índex és igual o superior al nombre de slides, tornem al primer
+            if (slideIndex >= slides.length) { slideIndex = 0; }
+            // Si l'índex és menor que zero, anem al ultim slide
+            if (slideIndex < 0) { slideIndex = slides.length - 1; }
+    
+            // Amaguem tots els slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+    
+            // Mostrem només el slide actual
+            slides[slideIndex].style.display = "inline-block";  
+        }
+    </script>
+    
+    </body>
+    </html>
+    
