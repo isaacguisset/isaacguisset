@@ -19,8 +19,10 @@
 #### Systems, DevOps & Hardware
 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=linux,bash,powershell,ubuntu,proxmox,docker,terraform,aws,cloudflare,cisco,nginx,git,github,grafana,python&perline=6" alt="Systems and DevOps Skills" />
+  <img src="https://skillicons.dev/icons?i=linux,bash,powershell,ubuntu,docker,terraform,aws,cloudflare,nginx,git,github,grafana&perline=6" alt="Systems and DevOps Skills" />
   <br/>
+  <img src="https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white" alt="Proxmox" />
+  <img src="https://img.shields.io/badge/Cisco-049FD9?style=for-the-badge&logo=cisco&logoColor=white" alt="Cisco" />
   <img src="https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white" alt="Slack" />
   <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white" alt="Jira" />
 </p>
